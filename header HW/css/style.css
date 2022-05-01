@@ -131,4 +131,55 @@ body{
   height: 20px;
 }
 
+.cart__content {
+  display: flex;
+  width: 400px;
+  max-height: 400px;
+  background-color: #F9F9F9;
+  right: 0;
+  border-radius: 10px;
+  position: absolute;
+  border: solid 1px #222222;
+  flex-direction: column;
+  display: none;
+}
 
+.cart__link {
+  display: flex;
+  font-size: 14px;
+  color: #222222;
+  padding: 12px 16px;
+  border-radius: 7px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart__conteiner:hover .cart__content {
+  display: block;
+}
+
+.cart__link:hover {
+  background-color: #dddddd;
+  transition: all 100ms ease 0s;
+}
+
+.purchase__icon {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
+
+.purchases__name {
+  text-transform: capitalize;
+  font-style: italic;
+  padding: 5px;
+}
+
+.purchases__price {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
